@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TiendaDeportes.Vistas.V_crePedido">
+  <ContentView.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical"
+                     Spacing="5" Padding="30, 10">
+
+                <Label Text="Registro de Pedidos"
+                   TextColor="Green" HorizontalOptions="CenterAndExpand"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   ></Label>
+                <Entry Placeholder="Ingresa la fecha del pedido:"
+                   Keyboard="Numeric" x:Name="fechaPedido"
+                   Margin="0, 15"></Entry>
+                <Entry Placeholder="Ingresa la dirección del pedido:"
+                   Keyboard="Text" x:Name="direccion"
+                   Margin="0, 15"></Entry>
+                <Entry Placeholder="Ingresa la fecha del envio:"
+                   Keyboard="Numeric" x:Name="fechaEnvio"
+                   Margin="0, 15"></Entry>
+                <Editor Placeholder="Ingresa el medio de entrega:"
+                   Keyboard="Text" x:Name="medio"
+                   Margin="0, 15"></Editor>
+                <Entry Placeholder="Ingresa la fecha de entrega:"
+                   Keyboard="Numeric" x:Name="fechaEntrega"
+                   Margin="0, 15"></Entry>
+                <Entry Placeholder="Ingresa el total a pagar:"
+                   Keyboard="Numeric" x:Name="total"
+                   Margin="0, 15"></Entry>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Aceptar" TextColor="GhostWhite" HorizontalOptions="FillAndExpand" 
+                            BorderRadius="10" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
+                    <Button Text="Borrar" TextColor="GhostWhite" HorizontalOptions="FillAndExpand" 
+                            BorderRadius="10" BackgroundColor="Red" Clicked="Button_Clicked_1"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentView.Content>
+</ContentView>

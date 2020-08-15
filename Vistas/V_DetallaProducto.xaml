@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TiendaDeportes.Vistas.V_DetallaProducto">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="12" Spacing="12">
+            <Label Text="Detalle de Productos"
+                   TextColor="Black" HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Start" FontSize="Title" FontAttributes="Bold"></Label>
+            <Label Text="Datos del Producto" HorizontalOptions="CenterAndExpand" 
+                   BackgroundColor="Yellow" TextColor="Black" x:Name="mensaje"></Label>
+            <Entry x:Name="nombre" Placeholder="Ingresa el nombre del producto"></Entry>
+            <Entry x:Name="descripcion" Placeholder="Descripción del producto"></Entry>
+            <Entry x:Name="stock" Placeholder="Piezas en existencia"></Entry>
+            <Entry x:Name="precioUnidad" Placeholder="Precio del producto"></Entry>
+            <StackLayout Orientation="Horizontal" Spacing="5"
+                >
+                <Button Text="Actualizar" BackgroundColor="Yellow" 
+                        FontSize="Subtitle" TextColor="Black"
+                        BorderRadius="9" Clicked="Button_Clicked"></Button>
+                <Button Text="Eliminar" BackgroundColor="Red" 
+                        FontSize="Subtitle" TextColor="GhostWhite"
+                        BorderRadius="9" Clicked="Button_Clicked_1"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TiendaDeportes.Vistas.V_Productos">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical"
+                     Spacing="5" Padding="30, 10">
+
+                <Label Text="Registro de Productos"
+                   TextColor="Green" HorizontalOptions="CenterAndExpand"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   ></Label>
+                <Entry Placeholder="Ingresa el nombre del producto:"
+                   Keyboard="Text" x:Name="nombre"
+                   Margin="0, 15" ></Entry>
+                <Entry Placeholder="Ingresa la descripción:"
+                   Keyboard="Text" x:Name="descripcion"
+                   Margin="0, 15"></Entry>
+                <Entry Placeholder="Piezas hay en existencia:"
+                   Keyboard="Numeric" x:Name="stock"
+                   Margin="0, 15"></Entry>
+                <Entry Placeholder="Ingresa el precio por unidad:"
+                   Keyboard="Numeric" Margin="0, 15"
+                   x:Name="precioUnidad"></Entry>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Aceptar" TextColor="GhostWhite" HorizontalOptions="FillAndExpand" 
+                            BorderRadius="10" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
+                    <Button Text="Borrar" TextColor="GhostWhite" HorizontalOptions="FillAndExpand" 
+                            BorderRadius="10" BackgroundColor="Red" Clicked="Button_Clicked_1"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

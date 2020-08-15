@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TiendaDeportes.Vistas.V_DetallePedido">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="12" Spacing="12">
+            <Label Text="Detalle de Pedidos"
+                   TextColor="Black" HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Start" FontSize="Title" FontAttributes="Bold"></Label>
+            <Label Text="Datos del Pedido" HorizontalOptions="CenterAndExpand" 
+                   BackgroundColor="Yellow" TextColor="Black" x:Name="mensaje"></Label>
+            <Entry x:Name="fechaPedido" Placeholder="Fecha del Pedido"></Entry>
+            <Entry x:Name="direccion" Placeholder="Dirección de envio"></Entry>
+            <Entry x:Name="fechaEnvio" Placeholder="Fecha de envio"></Entry>
+            <Entry x:Name="medio" Placeholder="Medio de entrega"></Entry>
+            <Entry x:Name="fechaEntrega" Placeholder="Fecha de entrega"></Entry>
+            <Entry x:Name="total" Placeholder="Total a Pagar"></Entry>
+            <StackLayout Orientation="Horizontal" Spacing="5"
+                >
+                <Button Text="Actualizar" BackgroundColor="Yellow" 
+                        FontSize="Subtitle" TextColor="Black"
+                        BorderRadius="9" Clicked="Button_Clicked"></Button>
+                <Button Text="Eliminar" BackgroundColor="Red" 
+                        FontSize="Subtitle" TextColor="GhostWhite"
+                        BorderRadius="9" Clicked="Button_Clicked_1"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

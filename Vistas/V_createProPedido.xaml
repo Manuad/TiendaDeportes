@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TiendaDeportes.Vistas.V_createProPedido">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical"
+                     Spacing="5" Padding="30, 10">
+
+                <Label Text="Registro de Pedido Producto:"
+                   TextColor="Green" HorizontalOptions="CenterAndExpand"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   ></Label>
+                <Entry Placeholder="Ingresa el Id del pedido:"
+                   Keyboard="Numeric" x:Name="idPedido"
+                   Margin="0, 15"></Entry>
+                <Entry Placeholder="Ingresa el Id del Producto:"
+                   Keyboard="Numeric" x:Name="idProducto"
+                   Margin="0, 15"></Entry>
+                <Entry Placeholder="Ingresa la cantidad:"
+                   Keyboard="Numeric" x:Name="cantidad"
+                   Margin="0, 15"></Entry>
+                <Editor Placeholder="Ingresa el precio Unitario:"
+                   Keyboard="Text" x:Name="precioUnitario"
+                   Margin="0, 15"></Editor>
+                <Entry Placeholder="Descuento:"
+                   Keyboard="Numeric" x:Name="descuento"
+                   Margin="0, 15"></Entry>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Aceptar" TextColor="GhostWhite" HorizontalOptions="FillAndExpand" 
+                            BorderRadius="10" BackgroundColor="Green" Clicked="Button_Clicked"></Button>
+                    <Button Text="Borrar" TextColor="GhostWhite" HorizontalOptions="FillAndExpand" 
+                            BorderRadius="10" BackgroundColor="Red" Clicked="Button_Clicked_1"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

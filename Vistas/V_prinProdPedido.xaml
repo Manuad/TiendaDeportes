@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TiendaDeportes.Vistas.V_prinProdPedido">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="30">
+            <Label Text="Productos-Pedido"
+                   TextColor="Black"
+                   FontSize="Title"
+                   FontAttributes="Bold" 
+                    HorizontalOptions="CenterAndExpand" />
+            <Label Text="Buscar por llave compuesta:"
+                   TextColor="Black"
+                   FontSize="Title"
+                   FontAttributes="Bold"></Label>
+            <Entry Placeholder="Id del pedido" Keyboard="Text"
+                   x:Name="idPedido"></Entry>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Buscar"
+                        BorderRadius="15"
+                        BackgroundColor="Green"
+                        TextColor="GhostWhite"
+                        Clicked="Button_Clicked"
+                        Padding="20"
+                        ></Button>
+                <Button Text="Registrar"
+                        BorderRadius="15"
+                        BackgroundColor="Green"
+                        TextColor="GhostWhite"
+                        Clicked="Button_Clicked_1"
+                        Padding="20"
+                        ></Button>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
